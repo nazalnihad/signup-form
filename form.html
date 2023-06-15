@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="form.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up</title>
+  </head>
+  <body>
+    <main>
+      <div class="left">
+        <h1>YO sup</h1>
+        <img src="" alt="" />
+      </div>
+
+      <div class="right">
+        <div class="content">
+          <p>This is not a real online service!</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Necessitatibus, commodi!
+          </p>
+
+          <p>Sign up now to get started.</p>
+        </div>
+
+        <div class="form">
+          <form action="#">
+            <fieldset>
+              <div class="row r1">
+                <div class="input">
+                  <label for="f_name">FIRST NAME</label>
+                  <input type="text" id="f_name" name="f_name" required />
+                </div>
+
+                <div class="input">
+                  <label for="l_name">LAST NAME</label>
+                  <input type="text" id="l_name" name="l_name" required />
+                </div>
+              </div>
+
+              <div class="row r2">
+                <div class="input">
+                  <label for="mail">EMAIL</label>
+                  <input type="email" id="mail" name="mail" required />
+                </div>
+
+                <div class="input">
+                  <label for="number">PHONE NUMBER</label>
+                  <input
+                    type="text"
+                    id="number"
+                    name="f_name"
+                    pattern="[0-9]{11}"
+                    title="11 letter number"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="row r3">
+                <div class="input">
+                  <label for="password">PASSWORD</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                  />
+                </div>
+
+                <div class="input">
+                  <label for="confirm_password">PASSWORD</label>
+                  <input
+                    type="password"
+                    id="confirm_password"
+                    name="confirm_password"
+                    required
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <button type="submit">Sign-Up</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
