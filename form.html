@@ -27,7 +27,8 @@
 
         <div class="form">
           <form action="#">
-            <fieldset>
+            <div class="main_box">
+              <div class="caption">Let's do this</div>
               <div class="row r1">
                 <div class="input">
                   <label for="f_name">FIRST NAME</label>
@@ -71,7 +72,7 @@
                 </div>
 
                 <div class="input">
-                  <label for="confirm_password">PASSWORD</label>
+                  <label for="confirm_password">CONFIRM PASSWORD</label>
                   <input
                     type="password"
                     id="confirm_password"
@@ -80,9 +81,11 @@
                   />
                 </div>
               </div>
-            </fieldset>
-
-            <button type="submit">Sign-Up</button>
+            </div>
+            <div class="submit_button">
+              <button type="submit">Create Account</button>
+              <p>Already have an account <a href="#">sign in</a></p>
+            </div>
           </form>
         </div>
       </div>
