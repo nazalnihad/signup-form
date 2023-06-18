@@ -8,6 +8,8 @@ p{
 }
 
 main{
+    background-color: #341354;
+    color: #BC04CC;
     height: 100%;
     width: 100%;
     display: flex;
@@ -15,11 +17,12 @@ main{
 }
 
 .left{
-    background-image: url(side_img.jpg);
+    background-image:url(side_img.jpg);
+    background-size: cover;
     height: 100%;
     width: 40vw;
-    right: 2rem;
-    background-repeat: auto;
+    /* right: 2rem; */
+    background-repeat: no-repeat;
 }
 
 .right
@@ -35,6 +38,10 @@ main{
     font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 2rem;
+    font-weight: bold;
+}
+.content p:last-child{
+    padding-top: 1rem;
 }
 
 .row{
@@ -59,8 +66,9 @@ form{
     gap: 1rem;
     padding: 2rem;
     padding-left: 2rem;
-    width: 100%;
-    background-color: aqua;
+    background-color: #06063f45;
+    color:#b4b4b4 ;
+    box-shadow: #bb04cc29 10px 3px;
 }
 
 input{
@@ -76,6 +84,7 @@ input{
 label{
     padding-bottom: 2px;
     /* font-weight: bold; */
+    color: #e902fe;
     font-size: 0.85rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -90,9 +99,10 @@ button{
     margin-bottom: 1rem;
     padding: .5rem 2rem;
     font-size: 1.2rem;
-    border: 1px solid gray;
-    background-color: rgb(136, 221, 138);
+    border: none;
+    background-color:#BC04CC;
     border-radius: 5px;
+    color: aliceblue;
 }
 .caption{
     font-size: 1.5rem;
@@ -106,4 +116,16 @@ input:focus{
 input[type="password"]:focus:invalid{
     border: 1px solid red;
 
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 25vh;
+    background-color: rgba(0, 0, 0, 0.416);
+
+}
+a{
+    text-decoration: none;
+    color: rgb(225, 169, 255);
 }
